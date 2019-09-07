@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_ESatsMv-EemS-cu8nkBOig" name="Company2EvoCompany" srcMM="/TraceabilityModel/case-study/mm/Company.ecore" trgMM="/TraceabilityModel/case-study/mm/evo/Company.ecore" isEvo="true">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_R-p1YMwYEemS-cu8nkBOig" name="Renaming">
+    <sourceElem xmi:id="_pDK54MwYEemS-cu8nkBOig">
+      <linkedElement href="mm/Company.ecore#//Company"/>
+    </sourceElem>
+    <targetElem xmi:id="_oaODgMwYEemS-cu8nkBOig">
+      <linkedElement href="mm/evo/Company.ecore#//Organisation"/>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_txmX4MwYEemS-cu8nkBOig" name="ClassToAbstract">
+    <sourceElem xmi:id="_PfSg4MwhEemS-cu8nkBOig">
+      <linkedElement href="mm/Company.ecore#//Person"/>
+    </sourceElem>
+    <targetElem xmi:id="_vjuc0MwYEemS-cu8nkBOig" varName="">
+      <linkedElement href="mm/evo/Company.ecore#//Person"/>
+      <links xmi:id="_NAv6gMwkEemS-cu8nkBOig" name="IntroduceSubclass">
+        <targetElem href="mm/evo/Company.ecore#//Employee"/>
+        <sourceElem xmi:id="_vMl5gMy4EemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/position"/>
+          <constraints xmi:id="_VTHAgM1cEemS-cu8nkBOig">
+            <nav xsi:type="ecore:EAttribute" href="mm/Company.ecore#//Person/position"/>
+            <refConstraint href="mm/Company.ecore#//type/employee"/>
+          </constraints>
+        </sourceElem>
+      </links>
+      <links xmi:id="_RZvfUMy5EemS-cu8nkBOig" name="IntroduceSubclass">
+        <targetElem href="mm/evo/Company.ecore#//Client"/>
+        <sourceElem xmi:id="_StbUwMy5EemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/position"/>
+          <constraints xmi:id="_YbREQM1cEemS-cu8nkBOig">
+            <nav xsi:type="ecore:EAttribute" href="mm/Company.ecore#//Person/position"/>
+            <refConstraint href="mm/Company.ecore#//type/client"/>
+          </constraints>
+        </sourceElem>
+      </links>
+      <links xmi:id="_O8vXwMzBEemS-cu8nkBOig" name="mergeAttributes">
+        <targetElem href="mm/evo/Company.ecore#//Person/fullName"/>
+        <sourceElem xmi:id="_QkYrAMzBEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/firstname"/>
+        </sourceElem>
+        <sourceElem xmi:id="_SdwncMzBEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/lastname"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_KvYwEMzNEemS-cu8nkBOig" name="ChangeRefType">
+        <targetElem href="mm/evo/Company.ecore#//Person/employed"/>
+        <sourceElem xmi:id="_Zz-woMzNEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/employed"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_HPOu8MzAEemS-cu8nkBOig" name="CollapseHierarchy">
+    <sourceElem xmi:id="_fFvREMzAEemS-cu8nkBOig" varName="">
+      <linkedElement href="mm/Company.ecore#//European"/>
+    </sourceElem>
+    <sourceElem xmi:id="_gzRJ4MzAEemS-cu8nkBOig">
+      <linkedElement href="mm/Company.ecore#//National"/>
+    </sourceElem>
+    <targetElem xmi:id="_eExjUMzAEemS-cu8nkBOig">
+      <linkedElement href="mm/evo/Company.ecore#//Project"/>
+      <links xmi:id="_BddIIMzBEemS-cu8nkBOig" name="mergeAttributes">
+        <targetElem href="mm/evo/Company.ecore#//Project/budget"/>
+        <sourceElem xmi:id="_F6HgsMzBEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//European/budget"/>
+        </sourceElem>
+        <sourceElem xmi:id="_HRQ50MzBEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//National/budget"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_KGLF4MzLEemS-cu8nkBOig" name="InlineClass">
+    <sourceElem xmi:id="_K6L8wMzLEemS-cu8nkBOig">
+      <linkedElement href="mm/Company.ecore#//Address"/>
+    </sourceElem>
+    <targetElem xmi:id="_LSKX4MzLEemS-cu8nkBOig">
+      <links xmi:id="_PSy7wMzLEemS-cu8nkBOig" name="liftAttribute">
+        <targetElem href="mm/evo/Company.ecore#//Organisation/city"/>
+        <sourceElem xmi:id="_Q3UpkMzLEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Address/city"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_S9SQgMzLEemS-cu8nkBOig" name="liftAttribute">
+        <targetElem href="mm/evo/Company.ecore#//Organisation/completeAddress"/>
+        <sourceElem xmi:id="_Up3uIMzLEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Address/completeAddress"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_1wJLcMzLEemS-cu8nkBOig" name="ChangeClass">
+    <sourceElem xmi:id="_2fbTUMzLEemS-cu8nkBOig">
+      <linkedElement href="mm/Company.ecore#//Project"/>
+    </sourceElem>
+    <targetElem xmi:id="_27bS0MzLEemS-cu8nkBOig">
+      <linkedElement href="mm/evo/Company.ecore#//Project"/>
+      <links xmi:id="_8SL8IMzLEemS-cu8nkBOig" name="changeRefType">
+        <targetElem href="mm/evo/Company.ecore#//Project/related"/>
+        <sourceElem xmi:id="_-lv6MMzLEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Project/related"/>
+          <nestedElement xmi:id="_kuiPAM5UEemS-cu8nkBOig">
+            <linkedElement href="mm/Company.ecore#//Category/name"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

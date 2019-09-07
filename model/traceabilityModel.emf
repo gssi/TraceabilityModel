@@ -1,0 +1,64 @@
+@namespace(uri="http://cs.gssi.it/traceabilitymodel/2019", prefix="traceabilityModel")
+package TraceabilityModel;
+
+class TraceabilityModel {
+  attr String name;
+  attr String project_path;
+  attr String srcMM;
+  attr String trgMM;
+  val TraceabilityLink[*] links;
+  attr boolean isEvo;
+}
+
+abstract class TraceabilityLink {
+  
+  attr String name;
+  
+}
+enum Operation{
+	EQ=0;
+	GT=1;
+	LT=2;
+}
+class Constraint{
+	ref ecore.EStructuralFeature[1] nav;
+	attr Operation[1] operation;
+	ref EObject[1] refConstraint;
+	attr String refConstraintValue;
+}
+
+abstract class InOutElement{
+	attr String varName;
+	ref EClass[1] linkedElement;
+	
+}
+class SourceElement extends InOutElement{
+	val Constraint[*] constraints;
+	ref ClassTraceabilityLink[1]#sourceElem tracelink;
+}
+class TargetElement extends InOutElement{
+	val FeatureTraceabilityLink[*]#owner links;
+	ref ClassTraceabilityLink[1]#targetElem tracelink;
+}
+
+class ClassTraceabilityLink extends TraceabilityLink {
+  val SourceElement[+] sourceElem;
+  val TargetElement[+] targetElem;
+  
+}
+
+class FeatureTraceabilityLink extends TraceabilityLink {
+	ref EObject targetElem;
+	ref TargetElement[1]#links owner;
+	val FeatureSourceElement[*]#tracelink sourceElem;
+}
+
+class FeatureSourceElement{
+	ref FeatureTraceabilityLink[1]#sourceElem tracelink;
+	ref EObject[1] linkedElement;
+	val Constraint[*] constraints;
+	val FeatureSourceElement[*] nestedElement;
+}
+
+
+

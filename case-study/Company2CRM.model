@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_CijSYMvZEemS-cu8nkBOig" name="Company2CRM" project_path="/TraceabilityModel/case-study/" srcMM="/TraceabilityModel/case-study/mm/Company.ecore" trgMM="/TraceabilityModel/case-study/mm/CRM.ecore">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_MGjYMMvZEemS-cu8nkBOig" name="Company2CRM">
+    <sourceElem xmi:id="_Xidv8MvbEemS-cu8nkBOig" varName="s">
+      <linkedElement href="mm/Company.ecore#//Company"/>
+    </sourceElem>
+    <targetElem xmi:id="_aBO4cMvbEemS-cu8nkBOig" varName="t">
+      <linkedElement href="mm/CRM.ecore#//CRM"/>
+      <links xmi:id="_m1WuYMvfEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//CRM/address"/>
+        <sourceElem xmi:id="_pTchcMvfEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Company/name"/>
+        </sourceElem>
+        <sourceElem xmi:id="_wLYCkMvfEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Company/address"/>
+          <nestedElement xmi:id="_57za0MvfEemS-cu8nkBOig">
+            <linkedElement href="mm/Company.ecore#//Address/city"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+      <links xmi:id="_ZpeQAMvsEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//CRM/accounts"/>
+        <sourceElem xmi:id="_cimZQMvsEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Company/persons"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_fk8v8MvsEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//CRM/projects"/>
+        <sourceElem xmi:id="_hUvSkMvsEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Company/projects"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_jOHPAMvsEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//CRM/groups"/>
+        <sourceElem xmi:id="_kRrk0MvsEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Company/lines"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_qxaREMvbEemS-cu8nkBOig" name="Person2Worker">
+    <sourceElem xmi:id="_yi2NEMvbEemS-cu8nkBOig" varName="s">
+      <linkedElement href="mm/Company.ecore#//Person"/>
+      <constraints xmi:id="_xfTEsMz0EemS-cu8nkBOig">
+        <nav xsi:type="ecore:EAttribute" href="mm/Company.ecore#//Person/position"/>
+        <refConstraint href="mm/Company.ecore#//type/employee"/>
+      </constraints>
+    </sourceElem>
+    <targetElem xmi:id="_PL5TUMvrEemS-cu8nkBOig" varName="t">
+      <linkedElement href="mm/CRM.ecore#//Account"/>
+      <links xmi:id="_pY5WQMvsEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Account/username"/>
+        <sourceElem xmi:id="_tbwHsMvsEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/firstname"/>
+        </sourceElem>
+        <sourceElem xmi:id="_zxvZYMvsEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/lastname"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_3kYkkMvsEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Account/group"/>
+        <sourceElem xmi:id="_7fjZoMvsEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/employed"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+    <targetElem xmi:id="_2Mi3oMvbEemS-cu8nkBOig" varName="t1">
+      <linkedElement href="mm/CRM.ecore#//Worker"/>
+      <links xmi:id="_MTTqsMvtEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Worker/account"/>
+        <sourceElem xmi:id="_PrThQMvtEemS-cu8nkBOig" linkedElement="_PL5TUMvrEemS-cu8nkBOig"/>
+      </links>
+      <links xmi:id="_auIqoMvvEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Worker/name"/>
+        <sourceElem xmi:id="_fCSncMvvEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/firstname"/>
+        </sourceElem>
+        <sourceElem xmi:id="_gWgoYMvvEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/lastname"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_wiknUMvvEemS-cu8nkBOig" name="Person2Client">
+    <sourceElem xmi:id="_-kg4EMvvEemS-cu8nkBOig" varName="s">
+      <linkedElement href="mm/Company.ecore#//Person"/>
+      <constraints xmi:id="_3EADYMz0EemS-cu8nkBOig">
+        <nav xsi:type="ecore:EAttribute" href="mm/Company.ecore#//Person/position"/>
+        <refConstraint href="mm/Company.ecore#//type/client"/>
+      </constraints>
+    </sourceElem>
+    <targetElem xmi:id="_E11sMMvwEemS-cu8nkBOig" varName="t">
+      <linkedElement href="mm/CRM.ecore#//Account"/>
+      <links xmi:id="_fThr8MvwEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Account/username"/>
+        <sourceElem xmi:id="_jlXUkMvwEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/firstname"/>
+        </sourceElem>
+        <sourceElem xmi:id="_m-LDcMvwEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/lastname"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_o8OEgMvwEemS-cu8nkBOig">
+        <targetElem href="mm/Company.ecore#//Person/employed"/>
+      </links>
+    </targetElem>
+    <targetElem xmi:id="_SjdSwMvwEemS-cu8nkBOig" varName="t1">
+      <linkedElement href="mm/CRM.ecore#//Client"/>
+      <links xmi:id="_f27T8MvwEemS-cu8nkBOig" targetElem="_E11sMMvwEemS-cu8nkBOig"/>
+      <links xmi:id="_t6CCUMvwEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Client/name"/>
+        <sourceElem xmi:id="_vgV40MvwEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/firstname"/>
+        </sourceElem>
+        <sourceElem xmi:id="_xSqLAMvwEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Person/lastname"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_D8FkQMvxEemS-cu8nkBOig" name="European2Project">
+    <sourceElem xmi:id="_JM7y0MvxEemS-cu8nkBOig" varName="s">
+      <linkedElement href="mm/Company.ecore#//European"/>
+    </sourceElem>
+    <targetElem xmi:id="_NgEb8MvxEemS-cu8nkBOig" varName="t">
+      <linkedElement href="mm/CRM.ecore#//Project"/>
+      <links xmi:id="_QHAB8MvxEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Project/name"/>
+        <sourceElem xmi:id="_S4fSIMvxEemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Project/name"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_TbbKoMvyEemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Project/area"/>
+        <sourceElem xmi:id="_UEZHwMv1EemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Project/related"/>
+          <nestedElement xmi:id="_YNmY0Mv1EemS-cu8nkBOig">
+            <linkedElement href="mm/Company.ecore#//Category/name"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+      <links xmi:id="_PlKt8Mv2EemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Project/budget"/>
+        <sourceElem xmi:id="_QySBUMv2EemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//European/budget"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_VUr1gMv2EemS-cu8nkBOig" name="National2Project">
+    <sourceElem xmi:id="_XIIwIMv2EemS-cu8nkBOig" varName="s">
+      <linkedElement href="mm/Company.ecore#//National"/>
+    </sourceElem>
+    <targetElem xmi:id="_aFRPoMv2EemS-cu8nkBOig" varName="t">
+      <linkedElement href="mm/CRM.ecore#//Project"/>
+      <links xmi:id="_fIxlwMv2EemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Project/name"/>
+        <sourceElem xmi:id="_i35i4Mv2EemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Project/name"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_lA_WUMv2EemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Project/area"/>
+        <sourceElem xmi:id="_mtBaUMv2EemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Project/related"/>
+          <nestedElement xmi:id="_qXQQYMv2EemS-cu8nkBOig">
+            <linkedElement href="mm/Company.ecore#//Category/name"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+      <links xmi:id="_uLHjkMv2EemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Project/budget"/>
+        <sourceElem xmi:id="_vbu24Mv2EemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//National/budget"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_2M1XQMv2EemS-cu8nkBOig" name="Unit2Group">
+    <sourceElem xmi:id="_0Ns7oMv3EemS-cu8nkBOig" varName="s">
+      <linkedElement href="mm/Company.ecore#//Unit"/>
+    </sourceElem>
+    <targetElem xmi:id="_3ATmIMv3EemS-cu8nkBOig" varName="t">
+      <linkedElement href="mm/CRM.ecore#//Group"/>
+      <links xmi:id="_1HyzEMv8EemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Group/name"/>
+        <sourceElem xmi:id="_IM9tIMv9EemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Division/name"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_3Z94wMv2EemS-cu8nkBOig" name="ServiceLine2Group">
+    <sourceElem xmi:id="_M3neYMv9EemS-cu8nkBOig">
+      <linkedElement href="mm/Company.ecore#//ServiceLine"/>
+    </sourceElem>
+    <targetElem xmi:id="_PFcA0Mv9EemS-cu8nkBOig">
+      <linkedElement href="mm/CRM.ecore#//Group"/>
+      <links xmi:id="_RyNwIMv9EemS-cu8nkBOig">
+        <targetElem href="mm/CRM.ecore#//Group/name"/>
+        <sourceElem xmi:id="_S9sEwMv9EemS-cu8nkBOig">
+          <linkedElement href="mm/Company.ecore#//Division/name"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

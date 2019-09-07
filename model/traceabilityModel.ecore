@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="TraceabilityModel" nsURI="http://cs.gssi.it/traceabilitymodel/2019"
+    nsPrefix="traceabilityModel">
+  <eClassifiers xsi:type="ecore:EClass" name="TraceabilityModel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="project_path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="srcMM" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="trgMM" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="links" upperBound="-1"
+        eType="#//TraceabilityLink" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isEvo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TraceabilityLink" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Operation">
+    <eLiterals name="EQ"/>
+    <eLiterals name="GT" value="1"/>
+    <eLiterals name="LT" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constraint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nav" lowerBound="1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operation" lowerBound="1"
+        eType="#//Operation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refConstraint" lowerBound="1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refConstraintValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InOutElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkedElement" lowerBound="1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SourceElement" eSuperTypes="#//InOutElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" upperBound="-1"
+        eType="#//Constraint" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tracelink" lowerBound="1"
+        eType="#//ClassTraceabilityLink" eOpposite="#//ClassTraceabilityLink/sourceElem"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TargetElement" eSuperTypes="#//InOutElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="links" upperBound="-1"
+        eType="#//FeatureTraceabilityLink" containment="true" eOpposite="#//FeatureTraceabilityLink/owner"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tracelink" lowerBound="1"
+        eType="#//ClassTraceabilityLink" eOpposite="#//ClassTraceabilityLink/targetElem"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassTraceabilityLink" eSuperTypes="#//TraceabilityLink">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceElem" lowerBound="1"
+        upperBound="-1" eType="#//SourceElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetElem" lowerBound="1"
+        upperBound="-1" eType="#//TargetElement" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FeatureTraceabilityLink" eSuperTypes="#//TraceabilityLink">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetElem" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" lowerBound="1" eType="#//TargetElement"
+        eOpposite="#//TargetElement/links"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceElem" upperBound="-1"
+        eType="#//FeatureSourceElement" containment="true" eOpposite="#//FeatureSourceElement/tracelink"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FeatureSourceElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tracelink" lowerBound="1"
+        eType="#//FeatureTraceabilityLink" eOpposite="#//FeatureTraceabilityLink/sourceElem"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkedElement" lowerBound="1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" upperBound="-1"
+        eType="#//Constraint" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nestedElement" upperBound="-1"
+        eType="#//FeatureSourceElement" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

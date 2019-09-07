@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" name="Company2CRM">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Company2CRM">
+    <sourceElem varName="s">
+      <linkedElement href="../mm/evo/Company.ecore#//Organisation"/>
+    </sourceElem>
+    <targetElem varName="t">
+      <linkedElement href="../mm/CRM.ecore#//CRM"/>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//CRM/address"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Organisation/name"/>
+        </sourceElem>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Organisation/city"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//CRM/accounts"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Organisation/persons"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//CRM/projects"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Organisation/projects"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//CRM/groups"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Organisation/lines"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Person2Worker">
+    <sourceElem>
+      <linkedElement href="../mm/evo/Company.ecore#//Employee"/>
+    </sourceElem>
+    <targetElem varName="t">
+      <linkedElement href="../mm/CRM.ecore#//Account"/>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Account/username"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Account/group"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Person/employed"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+    <targetElem varName="t1">
+      <linkedElement href="../mm/CRM.ecore#//Worker"/>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Worker/account"/>
+        <sourceElem>
+          <linkedElement href="../Company2CRM.model#_PL5TUMvrEemS-cu8nkBOig"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Worker/name"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Person2Client">
+    <sourceElem>
+      <linkedElement href="../mm/evo/Company.ecore#//Client"/>
+    </sourceElem>
+    <targetElem varName="t">
+      <linkedElement href="../mm/CRM.ecore#//Account"/>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Account/username"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/Company.ecore#//Person/employed"/>
+      </links>
+    </targetElem>
+    <targetElem varName="t1">
+      <linkedElement href="../mm/CRM.ecore#//Client"/>
+      <links>
+        <targetElem href="../Company2CRM.model#_E11sMMvwEemS-cu8nkBOig"/>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Client/name"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="European2Project">
+    <sourceElem varName="s">
+      <linkedElement href="../mm/evo/Company.ecore#//Project"/>
+    </sourceElem>
+    <targetElem varName="t">
+      <linkedElement href="../mm/CRM.ecore#//Project"/>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Project/name"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Project/name"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Project/area"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Project/related"/>
+          <nestedElement>
+            <linkedElement href="../mm/evo/Company.ecore#//Topic/id"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Project/budget"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Project/budget"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="National2Project">
+    <sourceElem varName="s">
+      <linkedElement href="../mm/evo/Company.ecore#//Project"/>
+    </sourceElem>
+    <targetElem varName="t">
+      <linkedElement href="../mm/CRM.ecore#//Project"/>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Project/name"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Project/name"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Project/area"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Project/related"/>
+          <nestedElement>
+            <linkedElement href="../mm/evo/Company.ecore#//Topic/id"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Project/budget"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Project/budget"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Unit2Group">
+    <sourceElem varName="s">
+      <linkedElement href="../mm/evo/Company.ecore#//Unit"/>
+    </sourceElem>
+    <targetElem varName="t">
+      <linkedElement href="../mm/CRM.ecore#//Group"/>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Group/name"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Division/name"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="ServiceLine2Group">
+    <sourceElem>
+      <linkedElement href="../mm/evo/Company.ecore#//ServiceLine"/>
+    </sourceElem>
+    <targetElem>
+      <linkedElement href="../mm/CRM.ecore#//Group"/>
+      <links>
+        <targetElem href="../mm/CRM.ecore#//Group/name"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Division/name"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>
