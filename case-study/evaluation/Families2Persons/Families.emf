@@ -1,0 +1,22 @@
+@namespace(uri="http://cs.gssi.it/families", prefix="families")
+package Families;
+
+class Families{
+	val Family[*]#container families;
+}
+
+class Family{
+	ref Families[1]#families container;
+	attr String lastname;
+	val Member[*]#family members;
+}
+class Member{
+	ref Family[1]#members family;
+	attr String firstname;
+	attr GenderType gender;
+}
+
+enum GenderType{
+	male=0;
+	female=1;
+}

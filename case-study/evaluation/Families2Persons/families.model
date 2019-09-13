@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<families:Families xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://cs.gssi.it/families" xmi:id="_OwXbQNVqEemS-cu8nkBOig">
+  <families xmi:id="_QXyFANVqEemS-cu8nkBOig" lastname="Rossi">
+    <members xmi:id="_RWLm8NVqEemS-cu8nkBOig" firstname="Mario"/>
+    <members xmi:id="_SJn2ENVqEemS-cu8nkBOig" firstname="Giovanna" gender="female"/>
+  </families>
+  <families xmi:id="_GVcygNVsEemS-cu8nkBOig" lastname="Doe">
+    <members xmi:id="_HDwqANVsEemS-cu8nkBOig" firstname="John"/>
+  </families>
+</families:Families>

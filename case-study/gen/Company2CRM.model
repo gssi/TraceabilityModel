@@ -11,9 +11,7 @@
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Organisation/name"/>
         </sourceElem>
-        <sourceElem>
-          <linkedElement href="../mm/evo/Company.ecore#//Organisation/city"/>
-        </sourceElem>
+        <sourceElem/>
       </links>
       <links>
         <targetElem href="../mm/CRM.ecore#//CRM/accounts"/>
@@ -46,6 +44,9 @@
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
         </sourceElem>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
+        </sourceElem>
       </links>
       <links>
         <targetElem href="../mm/CRM.ecore#//Account/group"/>
@@ -67,6 +68,9 @@
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
         </sourceElem>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
+        </sourceElem>
       </links>
     </targetElem>
   </links>
@@ -78,6 +82,9 @@
       <linkedElement href="../mm/CRM.ecore#//Account"/>
       <links>
         <targetElem href="../mm/CRM.ecore#//Account/username"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
+        </sourceElem>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
         </sourceElem>
@@ -93,6 +100,9 @@
       </links>
       <links>
         <targetElem href="../mm/CRM.ecore#//Client/name"/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
+        </sourceElem>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
         </sourceElem>

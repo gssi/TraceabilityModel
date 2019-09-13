@@ -1,0 +1,19 @@
+@namespace(uri="http://cs.gssi.it/persons", prefix="persons")
+package Persons;
+
+class Persons{
+	val Person[*]#list persons;
+}
+
+
+class Person{
+	attr String firstname;
+	attr String lastname;
+	attr GenderType gender;
+	ref Persons[1]#persons list;
+}
+
+enum GenderType{
+	male=0;
+	female=1;
+}

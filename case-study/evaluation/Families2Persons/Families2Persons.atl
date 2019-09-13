@@ -1,0 +1,21 @@
+-- @nsURI Families=http://cs.gssi.it/families
+-- @nsURI Persons=http://cs.gssi.it/persons
+
+module Families2Persons;
+create OUT : Persons from IN : Families;
+
+rule Families2Persons{
+	from s:Families!Families
+	to t: Persons!Persons()
+	
+}
+rule Member2Person{
+	from s:Families!Member
+	to t: Persons!Person(
+		firstname<-s.firstname,
+		lastname<-s.family.lastname,
+		list<-s.family.container,
+		gender<-s.gender
+	)
+}
+

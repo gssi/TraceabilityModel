@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" name="Families2Persons">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Families2Persons">
+    <sourceElem varName="s">
+      <linkedElement href="../../evo/Families.ecore#//Families"/>
+    </sourceElem>
+    <targetElem varName="t">
+      <linkedElement href="../../Persons.ecore#//Persons"/>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Member2Person">
+    <sourceElem varName="s">
+      <linkedElement href="../../evo/Families.ecore#//Member"/>
+    </sourceElem>
+    <targetElem varName="t">
+      <linkedElement href="../../Persons.ecore#//Person"/>
+      <links>
+        <targetElem href="../../Persons.ecore#//Person/firstname"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Families.ecore#//Member/firstname"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Persons.ecore#//Person/lastname"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Families.ecore#//Member/family"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Persons.ecore#//Person/list"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Families.ecore#//Member/family"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Persons.ecore#//Person/gender"/>
+        <sourceElem>
+          <linkedElement href="../Families2Persons.model#_1ptM8NV2EemS-cu8nkBOig"/>
+          <constraints>
+            <nav href="../../evo/Families.ecore#//Male"/>
+            <refConstraint href="../../Persons.ecore#//GenderType/male"/>
+          </constraints>
+        </sourceElem>
+        <sourceElem>
+          <linkedElement href="../Families2Persons.model#_1ptM8NV2EemS-cu8nkBOig"/>
+          <constraints>
+            <nav href="../../evo/Families.ecore#//Female"/>
+            <refConstraint href="../../Persons.ecore#//GenderType/female"/>
+          </constraints>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

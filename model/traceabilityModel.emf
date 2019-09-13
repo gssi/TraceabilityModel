@@ -21,7 +21,7 @@ enum Operation{
 	LT=2;
 }
 class Constraint{
-	ref ecore.EStructuralFeature[1] nav;
+	ref ecore.EObject[1] nav;
 	attr Operation[1] operation;
 	ref EObject[1] refConstraint;
 	attr String refConstraintValue;

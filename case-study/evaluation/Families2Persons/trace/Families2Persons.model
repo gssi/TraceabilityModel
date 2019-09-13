@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_WmsPkNVwEemS-cu8nkBOig" name="Families2Persons" project_path="/TraceabilityModel/case-study/evaluation/" srcMM="/TraceabilityModel/case-study/evaluation/Families2Persons/Families.ecore" trgMM="/TraceabilityModel/case-study/evaluation/Families2Persons/Persons.ecore">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_PSySMNVyEemS-cu8nkBOig" name="Families2Persons">
+    <sourceElem xmi:id="_nnku8NV2EemS-cu8nkBOig" varName="s">
+      <linkedElement href="../Families.ecore#//Families"/>
+    </sourceElem>
+    <targetElem xmi:id="_oBzz4NV2EemS-cu8nkBOig" varName="t">
+      <linkedElement href="../Persons.ecore#//Persons"/>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_z3hdoNV2EemS-cu8nkBOig" name="Member2Person">
+    <sourceElem xmi:id="_1ptM8NV2EemS-cu8nkBOig" varName="s">
+      <linkedElement href="../Families.ecore#//Member"/>
+    </sourceElem>
+    <targetElem xmi:id="_2NM7kNV2EemS-cu8nkBOig" varName="t">
+      <linkedElement href="../Persons.ecore#//Person"/>
+      <links xmi:id="_6nJXUNV2EemS-cu8nkBOig">
+        <targetElem href="../Persons.ecore#//Person/firstname"/>
+        <sourceElem xmi:id="_LHGioNV3EemS-cu8nkBOig">
+          <linkedElement href="../Families.ecore#//Member/firstname"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_OKc-4NV3EemS-cu8nkBOig">
+        <targetElem href="../Persons.ecore#//Person/lastname"/>
+        <sourceElem xmi:id="_P2tFUNV3EemS-cu8nkBOig">
+          <linkedElement href="../Families.ecore#//Member/family"/>
+          <nestedElement xmi:id="_RbGQQNV3EemS-cu8nkBOig">
+            <linkedElement href="../Families.ecore#//Family/lastname"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+      <links xmi:id="_UpHrcNV3EemS-cu8nkBOig">
+        <targetElem href="../Persons.ecore#//Person/list"/>
+        <sourceElem xmi:id="_YbM18NV3EemS-cu8nkBOig">
+          <linkedElement href="../Families.ecore#//Member/family"/>
+          <nestedElement xmi:id="_dP8XUNV3EemS-cu8nkBOig">
+            <linkedElement href="../Families.ecore#//Family/container"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+      <links xmi:id="_i0HxkNV3EemS-cu8nkBOig">
+        <targetElem href="../Persons.ecore#//Person/gender"/>
+        <sourceElem xmi:id="_kIuNANV3EemS-cu8nkBOig">
+          <linkedElement href="../Families.ecore#//Member/gender"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

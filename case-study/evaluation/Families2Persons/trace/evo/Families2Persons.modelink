@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modelink threeWay="true" forceExeedL="false" forceExeedM="false" forceExeedR="false">
+  <model path="/TraceabilityModel/case-study/evaluation/Families2Persons/evo/Families.ecore" position="LEFT" />
+  <model path="/TraceabilityModel/case-study/evaluation/Families2Persons/trace/evo/Families2Persons.model" position="MIDDLE" />
+  <model path="/TraceabilityModel/case-study/evaluation/Families2Persons/Persons.ecore" position="RIGHT" />
+</modelink>
+
