@@ -1,0 +1,32 @@
+@namespace(uri="http://petrinet.com/1", prefix="petrinet")
+package PetriNet;
+
+  abstract class LocatedElement {
+    !ordered attr String location;
+  }
+
+  abstract class NamedElement extends LocatedElement {
+    !ordered attr String name;
+  }
+
+  class PetriNet extends NamedElement {
+    !ordered val Element[*]#net elements;
+    
+  }
+
+  abstract class Element extends NamedElement {
+    !ordered ref PetriNet[1]#elements net;
+  }
+
+  class Place extends Element {
+    !ordered ref Transition[*]#outgoingArc incomingArc;
+    !ordered ref Transition[*]#incomingArc outgoingArc;
+  }
+
+  class Transition extends Element {
+    !ordered ref Place[*]#outgoingArc incomingArc;
+    !ordered ref Place[*]#incomingArc outgoingArc;
+  }
+
+
+

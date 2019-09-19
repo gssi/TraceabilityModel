@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Collaboration" nsURI="http://easychair.org/collaboration/2"
+    nsPrefix="collaboration">
+  <eClassifiers xsi:type="ecore:EClass" name="CollaborationModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="collaborations" upperBound="-1"
+        eType="#//Collaboration" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Collaboration">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="researchTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="researchers" upperBound="-1"
+        eType="#//Researcher" containment="true" eOpposite="#//Researcher/collaboration"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Researcher">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Affiliation_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Affiliation_weburl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="collaboration" lowerBound="1"
+        eType="#//Collaboration" eOpposite="#//Collaboration/researchers"/>
+  </eClassifiers>
+</ecore:EPackage>

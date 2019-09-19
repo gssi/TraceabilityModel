@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<collaboration:CollaborationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:collaboration="http://easychair.org/collaboration/2" xmi:id="__cJ9ANrdEemS-cu8nkBOig">
+  <collaborations xmi:id="_AFUOwNreEemS-cu8nkBOig" researchTitle="Bidirectional-coevolution">
+    <researchers xmi:id="_EtmBcNreEemS-cu8nkBOig" name="Ludovico Iovino" Affiliation_name="GSSI" Affiliation_weburl="gssi.it"/>
+    <researchers xmi:id="_HAbmwNreEemS-cu8nkBOig" name="Adrian Rutle" Affiliation_name="Western university of applied science" Affiliation_weburl="hvl.no"/>
+  </collaborations>
+</collaboration:CollaborationModel>

@@ -1,0 +1,20 @@
+@namespace(uri="http://easychair.org/collaboration/2", prefix="collaboration")
+package Collaboration;
+
+class CollaborationModel{
+	val Collaboration[*] collaborations;
+	
+}
+
+class Collaboration{
+	attr String researchTitle;
+	val Researcher[*]#collaboration researchers;
+}
+
+class Researcher{
+	attr String name;
+	attr String Affiliation_name;
+	attr String Affiliation_weburl;
+	ref Collaboration[1]#researchers collaboration;
+}
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<grafcet:Grafcet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grafcet="http://grafcet" xmi:id="_EVAOANqsEemS-cu8nkBOig" location="" name="my grafcet">
+  <elements xsi:type="grafcet:Step" xmi:id="_IJhBcNqsEemS-cu8nkBOig" name="s1" outgoingConnections="_MMOB4NqsEemS-cu8nkBOig"/>
+  <elements xsi:type="grafcet:Transition" xmi:id="_KyRzcNqsEemS-cu8nkBOig" name="t1" incomingConnections="_MMOB4NqsEemS-cu8nkBOig"/>
+  <connections xsi:type="grafcet:StepToTransition" xmi:id="_MMOB4NqsEemS-cu8nkBOig" name="s1_t1" from="_IJhBcNqsEemS-cu8nkBOig" to="_KyRzcNqsEemS-cu8nkBOig"/>
+</grafcet:Grafcet>

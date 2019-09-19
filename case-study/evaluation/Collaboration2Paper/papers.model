@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<paper:Papers xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:paper="http://easychair.org/paper">
+  <papers title="Bidirectional Co-evolution">
+    <authors firstname="Ludovico" lastname="Iovino" email="Ludovico.Iovino@gssi.it"/>
+    <authors firstname="Adrian" lastname="Rutle" email="Adrian.Rutle@hvl.no"/>
+  </papers>
+</paper:Papers>

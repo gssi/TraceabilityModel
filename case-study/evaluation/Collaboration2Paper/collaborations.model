@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<collaboration:CollaborationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:collaboration="http://easychair.org/collaboration" xmi:id="_E6Q5YNq7EemS-cu8nkBOig">
+  <collaborations xmi:id="_F2ZKcNq7EemS-cu8nkBOig" researchTitle="Bidirectional Co-evolution">
+    <researchers xmi:id="_Ge8_QNq7EemS-cu8nkBOig" firstName="Ludovico" lastname="Iovino" affiliation="_IgYrgNq7EemS-cu8nkBOig"/>
+    <researchers xmi:id="_Qa1ZkNq7EemS-cu8nkBOig" firstName="Adrian" lastname="Rutle" affiliation="_KLe7YNq7EemS-cu8nkBOig"/>
+  </collaborations>
+  <universities xmi:id="_IgYrgNq7EemS-cu8nkBOig" name="GSSI" weburl="gssi.it"/>
+  <universities xmi:id="_KLe7YNq7EemS-cu8nkBOig" name="Western Norway University of Applied Sciences&#xA;" weburl="hvl.no"/>
+</collaboration:CollaborationModel>

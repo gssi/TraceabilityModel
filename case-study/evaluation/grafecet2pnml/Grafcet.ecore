@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
-  <ecore:EPackage name="Grafcet">
+  <ecore:EPackage name="Grafcet" nsURI="http://grafcet" nsPrefix="grafcet">
     <eClassifiers xsi:type="ecore:EClass" name="LocatedElement" abstract="true">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
           lowerBound="1" eType="#/1/String"/>
@@ -57,8 +57,8 @@
           eType="#/0/Step" eOpposite="#/0/Step/incomingConnections"/>
     </eClassifiers>
   </ecore:EPackage>
-  <ecore:EPackage name="PrimitiveTypes">
-    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
-    <eClassifiers xsi:type="ecore:EDataType" name="Boolean"/>
+  <ecore:EPackage name="PrimitiveTypes" nsURI="http://primitivetypes" nsPrefix="primitivetypes">
+    <eClassifiers xsi:type="ecore:EDataType" name="String" instanceTypeName="string"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="Boolean" instanceClassName="boolean"/>
   </ecore:EPackage>
 </xmi:XMI>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<petrinet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petrinet="http://petrinet.com" location="" name="my grafcet">
+  <elements xsi:type="petrinet:Place" name="s1" outgoingArc="//@arcs.0"/>
+  <elements xsi:type="petrinet:Transition" name="t1" incomingArc="//@arcs.0"/>
+  <arcs xsi:type="petrinet:PlaceToTransition" name="s1_t1" from="//@elements.0" to="//@elements.1"/>
+</petrinet:PetriNet>

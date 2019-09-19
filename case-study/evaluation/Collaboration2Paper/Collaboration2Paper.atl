@@ -1,0 +1,31 @@
+-- @nsURI MM=http://easychair.org/collaboration
+-- @nsURI MM1=http://easychair.org/paper
+
+module Collaboration2Paper;
+create OUT : Paper from IN : Collaboration;
+
+rule Model2Model{
+	from s:Collaboration!CollaborationModel
+	to t: Paper!Papers(
+		papers<-s.collaborations
+	)
+}
+
+rule Collaboration2Paper{
+	
+	from s:Collaboration!Collaboration
+	to t:Paper!Paper(
+	title<-s.researchTitle,
+	authors<-s.researchers
+	)
+}
+
+rule Researcher2Author{
+	from s:Collaboration!Researcher
+	to t:Paper!Author(
+	firstname<-s.firstName,
+	lastname<-s.lastname,
+	email<-s.firstName+'.'+s.lastname+'@'+s.affiliation.weburl
+	)
+	
+}

@@ -1,0 +1,17 @@
+@namespace(uri="http://easychair.org/paper", prefix="paper")
+package Paper;
+
+class Papers{
+	val Paper[*] papers;
+}
+
+class Paper{
+	val Author[*] authors;
+	attr String title;
+}
+
+class Author{
+	attr String firstname;
+	attr String lastname;
+	attr String email;
+}
