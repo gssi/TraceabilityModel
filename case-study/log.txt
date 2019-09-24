@@ -1,0 +1,54 @@
+Running Migrator
+Elaborating Trace Link Company2CRM
+-->Found Renaming applied to Company
+   Elaborating Feature Trace Link with target: address
+===>Found InlineClass for type of address
+-->Found liftAttribute applied to city
+   Elaborating Feature Trace Link with target: accounts
+===>Found ClassToAbstract for type of persons
+   Elaborating Feature Trace Link with target: projects
+===>Found ChangeClass for type of projects
+   Elaborating Feature Trace Link with target: groups
+Elaborating Trace Link Person2Worker
+-->Found ClassToAbstract applied to Person
+-->Found IntroduceSubclass applied to position
+   Elaborating Feature Trace Link with target: username
+-->Found mergeAttributes applied on firstname
+-->Found mergeAttributes applied on lastname
+   Elaborating Feature Trace Link with target: group
+-->Found ChangeRefType applied on employed
+   Elaborating Feature Trace Link with target: account
+   Elaborating Feature Trace Link with target: name
+-->Found mergeAttributes applied on firstname
+-->Found mergeAttributes applied on lastname
+Elaborating Trace Link Person2Client
+-->Found ClassToAbstract applied to Person
+-->Found IntroduceSubclass applied to position
+   Elaborating Feature Trace Link with target: username
+-->Found mergeAttributes applied on firstname
+-->Found mergeAttributes applied on lastname
+   Elaborating Feature Trace Link with target: employed
+   Elaborating Feature Trace Link with target: t
+   Elaborating Feature Trace Link with target: name
+-->Found mergeAttributes applied on firstname
+-->Found mergeAttributes applied on lastname
+Elaborating Trace Link European2Project
+-->Found CollapseHierarchy applied to European
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: area
+-->Found changeRefType applied on related
+---->Applied Heuristic for retyping related to Topic
+   Elaborating Feature Trace Link with target: budget
+-->Found mergeAttributes applied on budget
+Elaborating Trace Link National2Project
+-->Found CollapseHierarchy applied to National
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: area
+-->Found changeRefType applied on related
+---->Applied Heuristic for retyping related to Topic
+   Elaborating Feature Trace Link with target: budget
+-->Found mergeAttributes applied on budget
+Elaborating Trace Link Unit2Group
+   Elaborating Feature Trace Link with target: name
+Elaborating Trace Link ServiceLine2Group
+   Elaborating Feature Trace Link with target: name
