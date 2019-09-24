@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_gjMZ4NrfEemS-cu8nkBOig" name="Collaboration2Paper" project_path="/TraceabilityModel/case-study/evaluation/Collaboration2Paper/" srcMM="/TraceabilityModel/case-study/evaluation/Collaboration2Paper/Collaboration.ecore" trgMM="/TraceabilityModel/case-study/evaluation/Collaboration2Paper/Paper.ecore">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_hSZCMNrfEemS-cu8nkBOig" name="Model2Model">
+    <sourceElem xmi:id="_vEFQcNrfEemS-cu8nkBOig">
+      <linkedElement href="../Collaboration.ecore#//CollaborationModel"/>
+    </sourceElem>
+    <targetElem xmi:id="_vp-LwNrfEemS-cu8nkBOig">
+      <linkedElement href="../Paper.ecore#//Papers"/>
+      <links xmi:id="_9L-_QNrfEemS-cu8nkBOig">
+        <targetElem href="../Paper.ecore#//Papers/papers"/>
+        <sourceElem xmi:id="__JX5ANrfEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//CollaborationModel/collaborations"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_CbETQNrgEemS-cu8nkBOig" name="Collaboration2Paper">
+    <sourceElem xmi:id="_EyfdoNrgEemS-cu8nkBOig">
+      <linkedElement href="../Collaboration.ecore#//Collaboration"/>
+    </sourceElem>
+    <targetElem xmi:id="_FI_5INrgEemS-cu8nkBOig">
+      <linkedElement href="../Paper.ecore#//Paper"/>
+      <links xmi:id="_PRqyQNrgEemS-cu8nkBOig">
+        <targetElem href="../Paper.ecore#//Paper/title"/>
+        <sourceElem xmi:id="_RccAsNrgEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Collaboration/researchTitle"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_Td5iINrgEemS-cu8nkBOig">
+        <targetElem href="../Paper.ecore#//Paper/authors"/>
+        <sourceElem xmi:id="_Vo-SkNrgEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Collaboration/researchers"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_XykcUNrgEemS-cu8nkBOig" name="Researcher2Author">
+    <sourceElem xmi:id="_ZmOyUNrgEemS-cu8nkBOig">
+      <linkedElement href="../Collaboration.ecore#//Researcher"/>
+    </sourceElem>
+    <targetElem xmi:id="_Z-WXYNrgEemS-cu8nkBOig">
+      <linkedElement href="../Paper.ecore#//Author"/>
+      <links xmi:id="_b169ANrgEemS-cu8nkBOig">
+        <targetElem href="../Paper.ecore#//Author/firstname"/>
+        <sourceElem xmi:id="_dX9XgNrgEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Researcher/firstName"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_fC_V8NrgEemS-cu8nkBOig">
+        <targetElem href="../Paper.ecore#//Author/lastname"/>
+        <sourceElem xmi:id="_gH5vkNrgEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Researcher/lastname"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_hUYw0NrgEemS-cu8nkBOig">
+        <targetElem href="../Paper.ecore#//Author/email"/>
+        <sourceElem xmi:id="_iE2kcNrgEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Researcher/firstName"/>
+        </sourceElem>
+        <sourceElem xmi:id="_k-RBkNrgEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Researcher/lastname"/>
+        </sourceElem>
+        <sourceElem xmi:id="_mBxtANrgEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Researcher/affiliation"/>
+          <nestedElement xmi:id="_nLcDwNrgEemS-cu8nkBOig">
+            <linkedElement href="../Collaboration.ecore#//Affiliation/weburl"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

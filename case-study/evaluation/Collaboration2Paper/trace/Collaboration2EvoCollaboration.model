@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_3NQhkNrgEemS-cu8nkBOig" name="Collaboration2EvoCollaboration" project_path="/TraceabilityModel/case-study/evaluation/Collaboration2Paper/trace/" srcMM="/TraceabilityModel/case-study/evaluation/Collaboration2Paper/Collaboration.ecore" trgMM="/TraceabilityModel/case-study/evaluation/Collaboration2Paper/evo/Collaboration.ecore" isEvo="true">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_B3WFsNrhEemS-cu8nkBOig" name="ChangeClass Collaboration Model">
+    <sourceElem xmi:id="_RxOrUNroEemS-cu8nkBOig">
+      <linkedElement href="../Collaboration.ecore#//CollaborationModel"/>
+    </sourceElem>
+    <targetElem xmi:id="_TQ6VYNroEemS-cu8nkBOig">
+      <linkedElement href="../evo/Collaboration.ecore#//CollaborationModel"/>
+      <links xmi:id="_VITU0NroEemS-cu8nkBOig">
+        <sourceElem xmi:id="_WbmvwNroEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//CollaborationModel/universities"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="__EhrcN3jEemS-cu8nkBOig" name="Inline class">
+    <sourceElem xmi:id="_AncPsN3kEemS-cu8nkBOig">
+      <linkedElement href="../Collaboration.ecore#//Affiliation"/>
+    </sourceElem>
+    <targetElem xmi:id="_BHLfsN3kEemS-cu8nkBOig">
+      <links xmi:id="_oI1WUN3kEemS-cu8nkBOig" name="lift attribute">
+        <targetElem href="../evo/Collaboration.ecore#//Researcher/Affiliation_name"/>
+        <sourceElem xmi:id="_pr5rkN3kEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Affiliation/name"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_rN4bsN3kEemS-cu8nkBOig" name="lift attribute">
+        <targetElem href="../evo/Collaboration.ecore#//Researcher/Affiliation_weburl"/>
+        <sourceElem xmi:id="_sjTWgN3kEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Affiliation/weburl"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_PKGwoN4gEemS-cu8nkBOig" name="ChangeClass">
+    <sourceElem xmi:id="_Q5wwYN4gEemS-cu8nkBOig">
+      <linkedElement href="../Collaboration.ecore#//Researcher"/>
+    </sourceElem>
+    <targetElem xmi:id="_RTthcN4gEemS-cu8nkBOig">
+      <linkedElement href="../evo/Collaboration.ecore#//Researcher"/>
+      <links xmi:id="_Uw1IkN4gEemS-cu8nkBOig" name="merge Attributes">
+        <targetElem href="../evo/Collaboration.ecore#//Researcher/name"/>
+        <sourceElem xmi:id="_VxWxcN4gEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Researcher/firstName"/>
+        </sourceElem>
+        <sourceElem xmi:id="_XemWYN4gEemS-cu8nkBOig">
+          <linkedElement href="../Collaboration.ecore#//Researcher/lastname"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

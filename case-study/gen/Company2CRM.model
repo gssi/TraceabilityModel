@@ -11,7 +11,9 @@
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Organisation/name"/>
         </sourceElem>
-        <sourceElem/>
+        <sourceElem>
+          <linkedElement href="../mm/evo/Company.ecore#//Organisation/city"/>
+        </sourceElem>
       </links>
       <links>
         <targetElem href="../mm/CRM.ecore#//CRM/accounts"/>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" name="Collaboration2Paper">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Model2Model">
+    <sourceElem>
+      <linkedElement href="../../evo/Collaboration.ecore#//CollaborationModel"/>
+    </sourceElem>
+    <targetElem>
+      <linkedElement href="../../Paper.ecore#//Papers"/>
+      <links>
+        <targetElem href="../../Paper.ecore#//Papers/papers"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Collaboration.ecore#//CollaborationModel/collaborations"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Collaboration2Paper">
+    <sourceElem>
+      <linkedElement href="../../evo/Collaboration.ecore#//Collaboration"/>
+    </sourceElem>
+    <targetElem>
+      <linkedElement href="../../Paper.ecore#//Paper"/>
+      <links>
+        <targetElem href="../../Paper.ecore#//Paper/title"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Collaboration.ecore#//Collaboration/researchTitle"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Paper.ecore#//Paper/authors"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Collaboration.ecore#//Collaboration/researchers"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Researcher2Author">
+    <sourceElem>
+      <linkedElement href="../../evo/Collaboration.ecore#//Researcher"/>
+    </sourceElem>
+    <targetElem>
+      <linkedElement href="../../Paper.ecore#//Author"/>
+      <links>
+        <targetElem href="../../Paper.ecore#//Author/firstname"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Collaboration.ecore#//Researcher/name"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Paper.ecore#//Author/lastname"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Collaboration.ecore#//Researcher/name"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Paper.ecore#//Author/email"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Collaboration.ecore#//Researcher/name"/>
+        </sourceElem>
+        <sourceElem>
+          <linkedElement href="../../evo/Collaboration.ecore#//Researcher/Affiliation_weburl"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

@@ -1,0 +1,19 @@
+Running Migrator
+Elaborating Trace Link Model2Model
+-->Found ChangeClass Collaboration Model applied to CollaborationModel
+   Elaborating Feature Trace Link with target: papers
+Elaborating Trace Link Collaboration2Paper
+   Elaborating Feature Trace Link with target: title
+   Elaborating Feature Trace Link with target: authors
+===>Found ChangeClass for type of researchers
+Elaborating Trace Link Researcher2Author
+-->Found ChangeClass applied to Researcher
+   Elaborating Feature Trace Link with target: firstname
+-->Found merge Attributes applied on firstName
+   Elaborating Feature Trace Link with target: lastname
+-->Found merge Attributes applied on lastname
+   Elaborating Feature Trace Link with target: email
+-->Found merge Attributes applied on firstName
+-->Found merge Attributes applied on lastname
+===>Found Inline class for type of affiliation
+-->Found lift attribute applied to weburl
