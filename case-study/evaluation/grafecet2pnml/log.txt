@@ -1,0 +1,38 @@
+Running Migrator
+Elaborating Trace Link Petrinet
+   Elaborating Feature Trace Link with target: location
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: elements
+   Elaborating Feature Trace Link with target: arcs
+Elaborating Trace Link Place
+-->Found changeClass applied to Step
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: net
+   Elaborating Feature Trace Link with target: incomingArc
+-->Found changeRefType applied on incomingConnections
+   Elaborating Feature Trace Link with target: outgoingArc
+-->Found changeRefType applied on outgoingConnections
+Elaborating Trace Link Transition
+-->Found Change Class applied to Transition
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: net
+   Elaborating Feature Trace Link with target: incomingArc
+-->Found changeRefType applied on incomingConnections
+   Elaborating Feature Trace Link with target: outgoingArc
+-->Found changeRefType applied on outgoingConnections
+Elaborating Trace Link PlaceToTransition
+-->Found Delete class applied to StepToTransition
+   Elaborating Feature Trace Link with target: location
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: from
+===>Found changeClass for type of from
+   Elaborating Feature Trace Link with target: to
+===>Found Change Class for type of to
+Elaborating Trace Link TransitionToPlace
+-->Found Delete class applied to TransitionToStep
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: net
+   Elaborating Feature Trace Link with target: from
+===>Found Change Class for type of from
+   Elaborating Feature Trace Link with target: to
+===>Found changeClass for type of to

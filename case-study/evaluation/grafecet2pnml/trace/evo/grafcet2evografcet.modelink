@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modelink threeWay="true" forceExeedL="false" forceExeedM="false" forceExeedR="false">
+  <model path="/TraceabilityModel/case-study/evaluation/grafecet2pnml/Grafcet.ecore" position="LEFT" />
+  <model path="/TraceabilityModel/case-study/evaluation/grafecet2pnml/trace/evo/grafcet2EvoGrafcet.model" position="MIDDLE" />
+  <model path="/TraceabilityModel/case-study/evaluation/grafecet2pnml/evo/Grafcet.ecore" position="RIGHT" />
+</modelink>
+

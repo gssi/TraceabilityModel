@@ -1,0 +1,36 @@
+@namespace(uri="http://grafcet/1", prefix="grafcet")
+package Grafcet ;
+  abstract class LocatedElement {
+    !ordered attr String location;
+  }
+
+  abstract class NamedElement extends LocatedElement {
+    !ordered attr String name;
+  }
+
+  class Grafcet extends NamedElement {
+    !ordered val Element[*]#grafcet elements;
+  }
+
+  abstract class Element extends NamedElement {
+    !ordered ref Grafcet[1]#elements grafcet;
+  }
+
+  class Step extends Element {
+    !ordered attr Boolean isInitial;
+    !ordered attr Boolean isActive;
+    !ordered attr String action;
+    !ordered ref Transition[*]#to incomingConnections;
+    !ordered ref Transition[*]#from outgoingConnections;
+  }
+
+  class Transition extends Element {
+    !ordered attr String condition;
+    !ordered ref Step[*]#to incomingConnections;
+    !ordered ref Step[*]#from outgoingConnections;
+  }
+
+ 
+
+
+

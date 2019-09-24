@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" name="Grafcet2Petrinet">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Petrinet">
+    <sourceElem varName="g">
+      <linkedElement href="../../evo/Grafcet.ecore#//Grafcet"/>
+    </sourceElem>
+    <targetElem>
+      <linkedElement href="../../PetriNet.ecore#//PetriNet"/>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//LocatedElement/location"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//LocatedElement/location"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//NamedElement/name"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//NamedElement/name"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//PetriNet/elements"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//Grafcet/elements"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//PetriNet/arcs"/>
+        <sourceElem/>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Place">
+    <sourceElem varName="g">
+      <linkedElement href="../../evo/Grafcet.ecore#//Step"/>
+    </sourceElem>
+    <targetElem varName="p">
+      <linkedElement href="../../PetriNet.ecore#//Place"/>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//NamedElement/name"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//NamedElement/name"/>
+        </sourceElem>
+      </links>
+      <links name="">
+        <targetElem href="../../PetriNet.ecore#//Element/net"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//Element/grafcet"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//Place/incomingArc"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//Step/incomingConnections"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//Place/outgoingArc"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//Step/outgoingConnections"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Transition">
+    <sourceElem varName="g">
+      <linkedElement href="../../evo/Grafcet.ecore#//Transition"/>
+    </sourceElem>
+    <targetElem varName="p">
+      <linkedElement href="../../PetriNet.ecore#//Transition"/>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//NamedElement/name"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//NamedElement/name"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//Element/net"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//Element/grafcet"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//Transition/incomingArc"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//Transition/incomingConnections"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//Transition/outgoingArc"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//Transition/outgoingConnections"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="PlaceToTransition">
+    <sourceElem/>
+    <targetElem>
+      <linkedElement href="../../PetriNet.ecore#//PlaceToTransition"/>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//LocatedElement/location"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//LocatedElement/location"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//NamedElement/name"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//NamedElement/name"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//PlaceToTransition/from"/>
+        <sourceElem/>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//PlaceToTransition/to"/>
+        <sourceElem/>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="TransitionToPlace">
+    <sourceElem/>
+    <targetElem>
+      <linkedElement href="../../PetriNet.ecore#//TransitionToPlace"/>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//NamedElement/name"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Grafcet.ecore#//NamedElement/name"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//Arc/net"/>
+        <sourceElem/>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//TransitionToPlace/from"/>
+        <sourceElem/>
+      </links>
+      <links>
+        <targetElem href="../../PetriNet.ecore#//TransitionToPlace/to"/>
+        <sourceElem/>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

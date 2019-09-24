@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_StFRcN7LEemS-cu8nkBOig" name="Grafcet2EvoGrafcet" project_path="/TraceabilityModel/case-study/evaluation/grafecet2pnml" srcMM="/TraceabilityModel/case-study/evaluation/grafecet2pnml/Grafcet.ecore" trgMM="/TraceabilityModel/case-study/evaluation/grafecet2pnml/evo/Grafcet.ecore" isEvo="true">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_ZHqIMN7LEemS-cu8nkBOig" name="Delete class">
+    <sourceElem xmi:id="_uOWYoN7MEemS-cu8nkBOig">
+      <linkedElement href="../../Grafcet.ecore#//StepToTransition"/>
+    </sourceElem>
+    <targetElem xmi:id="_I0hXQN7TEemS-cu8nkBOig"/>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_xU0aUN7MEemS-cu8nkBOig" name="Delete class">
+    <sourceElem xmi:id="_ylZ4cN7MEemS-cu8nkBOig">
+      <linkedElement href="../../Grafcet.ecore#//TransitionToStep"/>
+    </sourceElem>
+    <targetElem xmi:id="_IShdcN7TEemS-cu8nkBOig"/>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_0In-sN7MEemS-cu8nkBOig" name="changeClass">
+    <sourceElem xmi:id="_2gd_0N7MEemS-cu8nkBOig">
+      <linkedElement href="../../Grafcet.ecore#//Step"/>
+    </sourceElem>
+    <targetElem xmi:id="_3OaD4N7MEemS-cu8nkBOig">
+      <linkedElement href="../../evo/Grafcet.ecore#//Step"/>
+      <links xmi:id="_5Q9xgN7MEemS-cu8nkBOig" name="changeRefType">
+        <targetElem href="../../evo/Grafcet.ecore#//Step/incomingConnections"/>
+        <sourceElem xmi:id="_6NRBsN7MEemS-cu8nkBOig">
+          <linkedElement href="../../Grafcet.ecore#//Step/incomingConnections"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_L-oxkN7NEemS-cu8nkBOig" name="changeRefType">
+        <targetElem href="../../evo/Grafcet.ecore#//Step/outgoingConnections"/>
+        <sourceElem xmi:id="_NIxpcN7NEemS-cu8nkBOig">
+          <linkedElement href="../../Grafcet.ecore#//Step/outgoingConnections"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_OmiA4N7NEemS-cu8nkBOig" name="Change Class">
+    <sourceElem xmi:id="_PtOjMN7NEemS-cu8nkBOig">
+      <linkedElement href="../../Grafcet.ecore#//Transition"/>
+    </sourceElem>
+    <targetElem xmi:id="_QHigoN7NEemS-cu8nkBOig">
+      <linkedElement href="../../evo/Grafcet.ecore#//Transition"/>
+      <links xmi:id="_qbCCkN7NEemS-cu8nkBOig" name="changeRefType">
+        <targetElem href="../../evo/Grafcet.ecore#//Transition/incomingConnections"/>
+        <sourceElem xmi:id="_sG8x0N7NEemS-cu8nkBOig">
+          <linkedElement href="../../Grafcet.ecore#//Transition/incomingConnections"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_tjqncN7NEemS-cu8nkBOig" name="changeRefType">
+        <targetElem href="../../evo/Grafcet.ecore#//Transition/outgoingConnections"/>
+        <sourceElem xmi:id="_t59nkN7NEemS-cu8nkBOig">
+          <linkedElement href="../../Grafcet.ecore#//Transition/outgoingConnections"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

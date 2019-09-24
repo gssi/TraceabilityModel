@@ -30,9 +30,9 @@ rule Place {
 			location <- g.location,
 			name <- g.name,
 			net <- g.grafcet,
-			incomingArc <- g.incomingConnections->collect(s|s.from),
-			outgoingArc <- g.outgoingConnections->collect(s|s.to)
-		)
+			incomingArc <- g.incomingConnections,
+			outgoingArc <- g.outgoingConnections
+			)
 }
 
 -- The Transition rule generates a Transition element from the input Transition element. 
@@ -48,8 +48,8 @@ rule Transition {
 			location <- g.location,
 			name <- g.name,
 			net <- g.grafcet,
-			incomingArc <- g.incomingConnections->collect(s|s.from),
-			outgoingArc <- g.outgoingConnections->collect(s|s.to)
+			incomingArc <- g.incomingConnections,
+			outgoingArc <- g.outgoingConnections
 		)
 }
 

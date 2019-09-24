@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="ASCII"?>
-<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_JctgkNMKEemS-cu8nkBOig" name="Petrinet2EvoPetrinet"/>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_JctgkNMKEemS-cu8nkBOig" name="Petrinet2EvoPetrinet" project_path="/TraceabilityModel/case-study/evaluation/grafecet2pnml" srcMM="/TraceabilityModel/case-study/evaluation/grafecet2pnml/PetriNet.ecore" trgMM="/TraceabilityModel/case-study/evaluation/grafecet2pnml/evo/PetriNet.ecore">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_IofOwN7FEemS-cu8nkBOig">
+    <sourceElem xmi:id="_JFWJ4N7FEemS-cu8nkBOig">
+      <linkedElement href="../PetriNet.ecore#//PlaceToTransition"/>
+    </sourceElem>
+    <targetElem xmi:id="_Jbdj0N7FEemS-cu8nkBOig">
+      <links xmi:id="_NyToQN7FEemS-cu8nkBOig"/>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>
