@@ -1,0 +1,10 @@
+Running Migrator
+Elaborating Trace Link Families2Persons
+Elaborating Trace Link Member2Person
+-->Found Change Class applied to Member
+   Elaborating Feature Trace Link with target: firstname
+   Elaborating Feature Trace Link with target: lastname
+   Elaborating Feature Trace Link with target: list
+   Elaborating Feature Trace Link with target: gender
+-->Found IntroduceSubClass applied on gender
+-->Found IntroduceSubclass applied on gender

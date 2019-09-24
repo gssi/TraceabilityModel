@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="ASCII"?>
-<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_1K9mANV3EemS-cu8nkBOig" name="Families2EvoFamilies" project_path="/TraceabilityModel/case-study/evaluation/Families2Persons/trace" srcMM="/TraceabilityModel/case-study/evaluation/Families2Persons/Families.ecore" trgMM="/TraceabilityModel/case-study/evaluation/Families2Persons/evo/Families.ecore">
-  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_9-obENV3EemS-cu8nkBOig" name="Member2Member">
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_1K9mANV3EemS-cu8nkBOig" name="Families2EvoFamilies" project_path="/TraceabilityModel/case-study/evaluation/Families2Persons/trace" srcMM="/TraceabilityModel/case-study/evaluation/Families2Persons/Families.ecore" trgMM="/TraceabilityModel/case-study/evaluation/Families2Persons/evo/Families.ecore">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_9-obENV3EemS-cu8nkBOig" name="Change Class">
     <sourceElem xmi:id="_D_TkENV4EemS-cu8nkBOig">
       <linkedElement href="../Families.ecore#//Member"/>
     </sourceElem>
     <targetElem xmi:id="_FQyaENV4EemS-cu8nkBOig">
       <linkedElement href="../evo/Families.ecore#//Member"/>
-      <links xmi:id="_IDRIwNV4EemS-cu8nkBOig" name="IntroduceSubClassMale">
+      <links xmi:id="_IDRIwNV4EemS-cu8nkBOig" name="IntroduceSubClass">
         <targetElem href="../evo/Families.ecore#//Male"/>
         <sourceElem xmi:id="_IgNjcNV4EemS-cu8nkBOig">
           <linkedElement href="../Families.ecore#//Member/gender"/>
           <constraints xmi:id="_P51m8NV5EemS-cu8nkBOig">
-            <nav xsi:type="ecore:EAttribute" href="../Families.ecore#//Member/gender"/>
+            <nav href="../Families.ecore#//Member/gender"/>
             <refConstraint href="../Families.ecore#//GenderType/male"/>
           </constraints>
         </sourceElem>
       </links>
-      <links xmi:id="_VEJvsNV5EemS-cu8nkBOig" name="IntroduceSubclassFemale">
+      <links xmi:id="_VEJvsNV5EemS-cu8nkBOig" name="IntroduceSubclass">
         <targetElem href="../evo/Families.ecore#//Female"/>
         <sourceElem xmi:id="_WX_9MNV5EemS-cu8nkBOig">
           <linkedElement href="../Families.ecore#//Member/gender"/>
           <constraints xmi:id="_ZI6loNV5EemS-cu8nkBOig">
-            <nav xsi:type="ecore:EAttribute" href="../Families.ecore#//Member/gender"/>
+            <nav href="../Families.ecore#//Member/gender"/>
             <refConstraint href="../Families.ecore#//GenderType/female"/>
           </constraints>
         </sourceElem>
