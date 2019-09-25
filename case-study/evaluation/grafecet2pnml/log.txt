@@ -36,3 +36,39 @@ Elaborating Trace Link TransitionToPlace
 ===>Found Change Class for type of from
    Elaborating Feature Trace Link with target: to
 ===>Found changeClass for type of to
+
+=======================================================
+Running Migrator
+Elaborating Trace Link Petrinet
+   Elaborating Feature Trace Link with target: location
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: elements
+   Elaborating Feature Trace Link with target: arcs
+Elaborating Trace Link Place
+-->Found Change Class applied to Place
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: net
+   Elaborating Feature Trace Link with target: incomingArc
+-->Found change Ref Type applied on incomingArc
+   Elaborating Feature Trace Link with target: outgoingArc
+-->Found change Ref Type applied on outgoingArc
+Elaborating Trace Link Transition
+-->Found Change Class applied to Transition
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: net
+   Elaborating Feature Trace Link with target: incomingArc
+-->Found change REf Type applied on incomingArc
+   Elaborating Feature Trace Link with target: outgoingArc
+-->Found change REf Type applied on outgoingArc
+Elaborating Trace Link PlaceToTransition
+-->Found Delete Class applied to PlaceToTransition
+   Elaborating Feature Trace Link with target: location
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: from
+   Elaborating Feature Trace Link with target: to
+Elaborating Trace Link TransitionToPlace
+-->Found Delete Class applied to TransitionToPlace
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: net
+   Elaborating Feature Trace Link with target: from
+   Elaborating Feature Trace Link with target: to

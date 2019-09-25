@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="ASCII"?>
 <traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_JctgkNMKEemS-cu8nkBOig" name="Petrinet2EvoPetrinet" project_path="/TraceabilityModel/case-study/evaluation/grafecet2pnml" srcMM="/TraceabilityModel/case-study/evaluation/grafecet2pnml/PetriNet.ecore" trgMM="/TraceabilityModel/case-study/evaluation/grafecet2pnml/evo/PetriNet.ecore">
-  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_IofOwN7FEemS-cu8nkBOig">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_IofOwN7FEemS-cu8nkBOig" name="Delete Class">
     <sourceElem xmi:id="_JFWJ4N7FEemS-cu8nkBOig">
       <linkedElement href="../PetriNet.ecore#//PlaceToTransition"/>
     </sourceElem>
-    <targetElem xmi:id="_Jbdj0N7FEemS-cu8nkBOig">
-      <links xmi:id="_NyToQN7FEemS-cu8nkBOig"/>
+    <targetElem xmi:id="_Jbdj0N7FEemS-cu8nkBOig"/>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_9LIYoN7aEemS-cu8nkBOig" name="Delete Class">
+    <sourceElem xmi:id="_-4G30N7aEemS-cu8nkBOig">
+      <linkedElement href="../PetriNet.ecore#//TransitionToPlace"/>
+    </sourceElem>
+    <targetElem xmi:id="_-TnqsN7aEemS-cu8nkBOig"/>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_A6C6YN7bEemS-cu8nkBOig" name="Change Class">
+    <sourceElem xmi:id="_CL_DYN7bEemS-cu8nkBOig">
+      <linkedElement href="../PetriNet.ecore#//Place"/>
+    </sourceElem>
+    <targetElem xmi:id="_CwGdEN7bEemS-cu8nkBOig">
+      <linkedElement href="../evo/PetriNet.ecore#//Place"/>
+      <links xmi:id="_Fjl4YN7bEemS-cu8nkBOig" name="change Ref Type">
+        <targetElem href="../evo/PetriNet.ecore#//Place/incomingArc"/>
+        <sourceElem xmi:id="_IcAP8N7bEemS-cu8nkBOig">
+          <linkedElement href="../PetriNet.ecore#//Place/incomingArc"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_Jh_noN7bEemS-cu8nkBOig" name="change Ref Type">
+        <targetElem href="../evo/PetriNet.ecore#//Place/outgoingArc"/>
+        <sourceElem xmi:id="_LHQ8UN7bEemS-cu8nkBOig">
+          <linkedElement href="../PetriNet.ecore#//Place/outgoingArc"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_Me7S0N7bEemS-cu8nkBOig" name="Change Class">
+    <sourceElem xmi:id="_O7W5AN7bEemS-cu8nkBOig">
+      <linkedElement href="../PetriNet.ecore#//Transition"/>
+    </sourceElem>
+    <targetElem xmi:id="_P1m6wN7bEemS-cu8nkBOig">
+      <linkedElement href="../evo/PetriNet.ecore#//Transition"/>
+      <links xmi:id="_Qu7IYN7bEemS-cu8nkBOig" name="change REf Type">
+        <targetElem href="../evo/PetriNet.ecore#//Transition/incomingArc"/>
+        <sourceElem xmi:id="_SYgVUN7bEemS-cu8nkBOig">
+          <linkedElement href="../PetriNet.ecore#//Transition/incomingArc"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_TUrCoN7bEemS-cu8nkBOig" name="change REf Type">
+        <targetElem href="../evo/PetriNet.ecore#//Transition/outgoingArc"/>
+        <sourceElem xmi:id="_UL6MoN7bEemS-cu8nkBOig">
+          <linkedElement href="../PetriNet.ecore#//Transition/outgoingArc"/>
+        </sourceElem>
+      </links>
     </targetElem>
   </links>
 </traceabilityModel:TraceabilityModel>
