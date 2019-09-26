@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<book:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:book="http://cs.gssi.it/book" xmi:id="_VwQT8OA-EemS-cu8nkBOig">
+  <books xmi:id="_XnEroOA-EemS-cu8nkBOig" isbn="324e2d2d2" name="title of my first book" authors="_WZ68AOA-EemS-cu8nkBOig" nbpages="35">
+    <sections xsi:type="book:Section" xmi:id="_jMBVgOA-EemS-cu8nkBOig" title="First Section"/>
+    <sections xsi:type="book:Paragraph" xmi:id="_kimt8OA-EemS-cu8nkBOig" title="First Par"/>
+  </books>
+  <authors xmi:id="_WZ68AOA-EemS-cu8nkBOig" name="John Doe"/>
+</book:Library>

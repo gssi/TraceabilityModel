@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pub:Publications xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pub="http://cs.gssi.it/publication">
+  <pubs nbpages="35" title="title of my first book" uid="324e2d2d2" authors="John Doe">
+    <sections title="First Section"/>
+    <sections title="First Par"/>
+  </pubs>
+</pub:Publications>

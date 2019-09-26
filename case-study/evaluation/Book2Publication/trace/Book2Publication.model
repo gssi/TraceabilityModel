@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_r4TBwOBBEemS-cu8nkBOig" name="Book2Publication" project_path="/TraceabilityModel/case-study/evaluation/Book2Publication" srcMM="/TraceabilityModel/case-study/evaluation/Book2Publication/Book.ecore" trgMM="/TraceabilityModel/case-study/evaluation/Book2Publication/Publication.ecore">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_yWFkkOBBEemS-cu8nkBOig" name="Library2Publications">
+    <sourceElem xmi:id="_uQWBwOBCEemS-cu8nkBOig">
+      <linkedElement href="../Book.ecore#//Library"/>
+    </sourceElem>
+    <targetElem xmi:id="_ukJHgOBCEemS-cu8nkBOig">
+      <linkedElement href="../Publication.ecore#//Publications"/>
+      <links xmi:id="_xPtV4OBCEemS-cu8nkBOig">
+        <targetElem href="../Publication.ecore#//Publications/pubs"/>
+        <sourceElem xmi:id="_yHjj4OBCEemS-cu8nkBOig">
+          <linkedElement href="../Book.ecore#//Library/books"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_wdWPYOBDEemS-cu8nkBOig" name="Book2Publication">
+    <sourceElem xmi:id="_zrniMOBDEemS-cu8nkBOig">
+      <linkedElement href="../Book.ecore#//Book"/>
+    </sourceElem>
+    <targetElem xmi:id="_0lCdgOBDEemS-cu8nkBOig">
+      <linkedElement href="../Publication.ecore#//Publication"/>
+      <links xmi:id="_1iEGcOBDEemS-cu8nkBOig">
+        <targetElem href="../Publication.ecore#//Publication/title"/>
+        <sourceElem xmi:id="_3mMhYOBDEemS-cu8nkBOig">
+          <linkedElement href="../Book.ecore#//Book/name"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_4npXUOBDEemS-cu8nkBOig">
+        <targetElem href="../Publication.ecore#//Publication/nbpages"/>
+        <sourceElem xmi:id="_573_UOBDEemS-cu8nkBOig">
+          <linkedElement href="../Book.ecore#//Book/nbpages"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_6zOeEOBDEemS-cu8nkBOig">
+        <targetElem href="../Publication.ecore#//Publication/sections"/>
+        <sourceElem xmi:id="_758OgOBDEemS-cu8nkBOig">
+          <linkedElement href="../Book.ecore#//Book/sections"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="_89ogIOBDEemS-cu8nkBOig">
+        <targetElem href="../Publication.ecore#//Publication/uid"/>
+        <sourceElem xmi:id="_-K7ZsOBDEemS-cu8nkBOig">
+          <linkedElement href="../Book.ecore#//Book/isbn"/>
+        </sourceElem>
+      </links>
+      <links xmi:id="__EA90OBDEemS-cu8nkBOig">
+        <targetElem href="../Publication.ecore#//Publication/authors"/>
+        <sourceElem xmi:id="_AsU_cOBEEemS-cu8nkBOig">
+          <linkedElement href="../Book.ecore#//Book/authors"/>
+          <nestedElement xmi:id="_Bq_AEOBEEemS-cu8nkBOig">
+            <linkedElement href="../Book.ecore#//Author/name"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_DPGeMOBEEemS-cu8nkBOig" name="Section2Section">
+    <sourceElem xmi:id="_XgCAwOBEEemS-cu8nkBOig">
+      <linkedElement href="../Book.ecore#//Section"/>
+    </sourceElem>
+    <targetElem xmi:id="_X0vsgOBEEemS-cu8nkBOig">
+      <linkedElement href="../Publication.ecore#//Section"/>
+      <links xmi:id="_a6YAsOBEEemS-cu8nkBOig">
+        <targetElem href="../Publication.ecore#//Section/title"/>
+        <sourceElem xmi:id="_b5cRAOBEEemS-cu8nkBOig">
+          <linkedElement href="../Book.ecore#//Section/title"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_difScOBEEemS-cu8nkBOig" name="Paragraph2Section" comment="">
+    <sourceElem xmi:id="_frGkwOBEEemS-cu8nkBOig">
+      <linkedElement href="../Book.ecore#//Paragraph"/>
+    </sourceElem>
+    <targetElem xmi:id="_gBLicOBEEemS-cu8nkBOig">
+      <linkedElement href="../Publication.ecore#//Section"/>
+      <links xmi:id="_hYi-AOBEEemS-cu8nkBOig">
+        <targetElem href="../Publication.ecore#//Section/title"/>
+        <sourceElem xmi:id="_j_RIoOBEEemS-cu8nkBOig">
+          <linkedElement href="../Book.ecore#//Paragraph/title"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

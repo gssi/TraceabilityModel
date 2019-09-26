@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_CijSYMvZEemS-cu8nkBOig" name="Company2CRM" project_path="/TraceabilityModel/case-study/" srcMM="/TraceabilityModel/case-study/mm/Company.ecore" trgMM="/TraceabilityModel/case-study/mm/CRM.ecore">
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_CijSYMvZEemS-cu8nkBOig" name="Company2CRM" project_path="/TraceabilityModel/case-study/" srcMM="/TraceabilityModel/case-study/mm/Company.ecore" trgMM="/TraceabilityModel/case-study/mm/CRM.ecore">
   <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_MGjYMMvZEemS-cu8nkBOig" name="Company2CRM">
     <sourceElem xmi:id="_Xidv8MvbEemS-cu8nkBOig" varName="s">
       <linkedElement href="mm/Company.ecore#//Company"/>
@@ -42,7 +42,7 @@
     <sourceElem xmi:id="_yi2NEMvbEemS-cu8nkBOig" varName="s">
       <linkedElement href="mm/Company.ecore#//Person"/>
       <constraints xmi:id="_xfTEsMz0EemS-cu8nkBOig">
-        <nav xsi:type="ecore:EAttribute" href="mm/Company.ecore#//Person/position"/>
+        <nav href="mm/Company.ecore#//Person/position"/>
         <refConstraint href="mm/Company.ecore#//type/employee"/>
       </constraints>
     </sourceElem>
@@ -85,7 +85,7 @@
     <sourceElem xmi:id="_-kg4EMvvEemS-cu8nkBOig" varName="s">
       <linkedElement href="mm/Company.ecore#//Person"/>
       <constraints xmi:id="_3EADYMz0EemS-cu8nkBOig">
-        <nav xsi:type="ecore:EAttribute" href="mm/Company.ecore#//Person/position"/>
+        <nav href="mm/Company.ecore#//Person/position"/>
         <refConstraint href="mm/Company.ecore#//type/client"/>
       </constraints>
     </sourceElem>

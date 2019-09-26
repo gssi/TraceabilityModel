@@ -13,7 +13,7 @@ class TraceabilityModel {
 abstract class TraceabilityLink {
   
   attr String name;
-  
+  attr String comment;
 }
 enum Operation{
 	EQ=0;

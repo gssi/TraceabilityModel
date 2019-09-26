@@ -1,0 +1,18 @@
+Running Migrator
+Elaborating Trace Link Library2Publications
+   Elaborating Feature Trace Link with target: pubs
+===>Found Change Class for type of books
+Elaborating Trace Link Book2Publication
+-->Found Change Class applied to Book
+   Elaborating Feature Trace Link with target: title
+-->Found Rename Attribute applied on name(Source)
+   Elaborating Feature Trace Link with target: nbpages
+   Elaborating Feature Trace Link with target: sections
+   Elaborating Feature Trace Link with target: uid
+   Elaborating Feature Trace Link with target: authors
+Elaborating Trace Link Section2Section
+-->Found Collapse Hierarchy applied to Section
+   Elaborating Feature Trace Link with target: title
+Elaborating Trace Link Paragraph2Section
+-->Found Collapse Hierarchy applied to Paragraph
+   Elaborating Feature Trace Link with target: title

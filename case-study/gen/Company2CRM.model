@@ -7,7 +7,6 @@
     <targetElem varName="t">
       <linkedElement href="../mm/CRM.ecore#//CRM"/>
       <links>
-        <targetElem href="../mm/CRM.ecore#//CRM/address"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Organisation/name"/>
         </sourceElem>
@@ -16,19 +15,17 @@
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//CRM/accounts"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Organisation/persons"/>
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//CRM/projects"/>
+        <targetElem href="../mm/evo/Company.ecore#//Organisation/projects"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Organisation/projects"/>
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//CRM/groups"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Organisation/lines"/>
         </sourceElem>
@@ -42,7 +39,6 @@
     <targetElem varName="t">
       <linkedElement href="../mm/CRM.ecore#//Account"/>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Account/username"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
         </sourceElem>
@@ -51,7 +47,6 @@
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Account/group"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Person/employed"/>
         </sourceElem>
@@ -60,13 +55,11 @@
     <targetElem varName="t1">
       <linkedElement href="../mm/CRM.ecore#//Worker"/>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Worker/account"/>
         <sourceElem>
           <linkedElement href="../Company2CRM.model#_PL5TUMvrEemS-cu8nkBOig"/>
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Worker/name"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
         </sourceElem>
@@ -83,7 +76,6 @@
     <targetElem varName="t">
       <linkedElement href="../mm/CRM.ecore#//Account"/>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Account/username"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
         </sourceElem>
@@ -92,16 +84,15 @@
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/Company.ecore#//Person/employed"/>
+        <targetElem href="../mm/evo/Company.ecore#//Person/employed"/>
       </links>
     </targetElem>
     <targetElem varName="t1">
-      <linkedElement href="../mm/CRM.ecore#//Client"/>
+      <linkedElement href="../mm/evo/Company.ecore#//Client"/>
       <links>
         <targetElem href="../Company2CRM.model#_E11sMMvwEemS-cu8nkBOig"/>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Client/name"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Person/fullName"/>
         </sourceElem>
@@ -111,20 +102,19 @@
       </links>
     </targetElem>
   </links>
-  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="European2Project">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="European2Project" comment="This rule should be revised">
     <sourceElem varName="s">
       <linkedElement href="../mm/evo/Company.ecore#//Project"/>
     </sourceElem>
     <targetElem varName="t">
-      <linkedElement href="../mm/CRM.ecore#//Project"/>
+      <linkedElement href="../mm/evo/Company.ecore#//Project"/>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Project/name"/>
+        <targetElem href="../mm/evo/Company.ecore#//Project/name"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Project/name"/>
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Project/area"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Project/related"/>
           <nestedElement>
@@ -133,27 +123,26 @@
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Project/budget"/>
+        <targetElem href="../mm/evo/Company.ecore#//Project/budget"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Project/budget"/>
         </sourceElem>
       </links>
     </targetElem>
   </links>
-  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="National2Project">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="National2Project" comment="This rule should be revised">
     <sourceElem varName="s">
       <linkedElement href="../mm/evo/Company.ecore#//Project"/>
     </sourceElem>
     <targetElem varName="t">
-      <linkedElement href="../mm/CRM.ecore#//Project"/>
+      <linkedElement href="../mm/evo/Company.ecore#//Project"/>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Project/name"/>
+        <targetElem href="../mm/evo/Company.ecore#//Project/name"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Project/name"/>
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Project/area"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Project/related"/>
           <nestedElement>
@@ -162,7 +151,7 @@
         </sourceElem>
       </links>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Project/budget"/>
+        <targetElem href="../mm/evo/Company.ecore#//Project/budget"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Project/budget"/>
         </sourceElem>
@@ -176,7 +165,6 @@
     <targetElem varName="t">
       <linkedElement href="../mm/CRM.ecore#//Group"/>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Group/name"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Division/name"/>
         </sourceElem>
@@ -190,7 +178,6 @@
     <targetElem>
       <linkedElement href="../mm/CRM.ecore#//Group"/>
       <links>
-        <targetElem href="../mm/CRM.ecore#//Group/name"/>
         <sourceElem>
           <linkedElement href="../mm/evo/Company.ecore#//Division/name"/>
         </sourceElem>

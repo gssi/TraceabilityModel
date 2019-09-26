@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_jeHRcOBGEemS-cu8nkBOig" name="Book2EvoBook" project_path="/TraceabilityModel/case-study/evaluation/Book2Publication/trace" srcMM="/TraceabilityModel/case-study/evaluation/Book2Publication/Book.ecore" trgMM="/TraceabilityModel/case-study/evaluation/Book2Publication/evo/Book.ecore" isEvo="true">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_xB3xYOBGEemS-cu8nkBOig" name="Change Class">
+    <sourceElem xmi:id="_yOZO4OBGEemS-cu8nkBOig">
+      <linkedElement href="../Book.ecore#//Book"/>
+    </sourceElem>
+    <targetElem xmi:id="_yhqJIOBGEemS-cu8nkBOig">
+      <linkedElement href="../evo/Book.ecore#//Book"/>
+      <links xmi:id="_1HGhYOBGEemS-cu8nkBOig" name="Rename Attribute">
+        <targetElem href="../evo/Book.ecore#//Book/title"/>
+        <sourceElem xmi:id="_19fW0OBGEemS-cu8nkBOig">
+          <linkedElement href="../Book.ecore#//Book/name"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_4FjPgOBGEemS-cu8nkBOig" name="Collapse Hierarchy" comment="">
+    <sourceElem xmi:id="_-Fv3YOBGEemS-cu8nkBOig">
+      <linkedElement href="../Book.ecore#//Section"/>
+    </sourceElem>
+    <sourceElem xmi:id="__NFS4OBGEemS-cu8nkBOig">
+      <linkedElement href="../Book.ecore#//Paragraph"/>
+    </sourceElem>
+    <targetElem xmi:id="__6GJ4OBGEemS-cu8nkBOig">
+      <linkedElement href="../evo/Book.ecore#//Chapter"/>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

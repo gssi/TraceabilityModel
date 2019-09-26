@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" name="Book2Publication">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Library2Publications">
+    <sourceElem>
+      <linkedElement href="../../evo/Book.ecore#//Library"/>
+    </sourceElem>
+    <targetElem>
+      <linkedElement href="../../Publication.ecore#//Publications"/>
+      <links>
+        <targetElem href="../../Publication.ecore#//Publications/pubs"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Book.ecore#//Library/books"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Book2Publication">
+    <sourceElem>
+      <linkedElement href="../../evo/Book.ecore#//Book"/>
+    </sourceElem>
+    <targetElem>
+      <linkedElement href="../../Publication.ecore#//Publication"/>
+      <links>
+        <targetElem href="../../Publication.ecore#//Publication/title"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Book.ecore#//Book/title"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Publication.ecore#//Publication/nbpages"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Book.ecore#//Book/nbpages"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Publication.ecore#//Publication/sections"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Book.ecore#//Book/sections"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Publication.ecore#//Publication/uid"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Book.ecore#//Book/isbn"/>
+        </sourceElem>
+      </links>
+      <links>
+        <targetElem href="../../Publication.ecore#//Publication/authors"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Book.ecore#//Book/authors"/>
+          <nestedElement>
+            <linkedElement href="../../Book.ecore#//Author/name"/>
+          </nestedElement>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Section2Section" comment="This rule should be revised">
+    <sourceElem>
+      <linkedElement href="../../evo/Book.ecore#//Chapter"/>
+    </sourceElem>
+    <targetElem>
+      <linkedElement href="../../Publication.ecore#//Section"/>
+      <links>
+        <targetElem href="../../Publication.ecore#//Section/title"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Book.ecore#//Chapter/title"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Paragraph2Section" comment="This rule should be revised">
+    <sourceElem>
+      <linkedElement href="../../evo/Book.ecore#//Chapter"/>
+    </sourceElem>
+    <targetElem>
+      <linkedElement href="../../Publication.ecore#//Section"/>
+      <links>
+        <targetElem href="../../Publication.ecore#//Section/title"/>
+        <sourceElem>
+          <linkedElement href="../../evo/Book.ecore#//Chapter/title"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

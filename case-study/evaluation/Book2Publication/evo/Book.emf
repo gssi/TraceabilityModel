@@ -1,0 +1,23 @@
+@namespace(uri="http://cs.gssi.it/book/1", prefix="book")
+package Book;
+
+class Library{
+	val Book[*] books;
+	val Author[*] authors;
+}
+
+class Book{
+	attr String isbn;
+	attr String title;
+	ref Author[*] authors;
+	attr int nbpages;
+	val Chapter[*] sections;
+}
+
+class Chapter{
+attr String title;
+}
+
+class Author{
+	attr String name;
+}
