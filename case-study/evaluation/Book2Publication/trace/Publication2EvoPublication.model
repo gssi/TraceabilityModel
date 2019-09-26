@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<traceabilityModel:TraceabilityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019" xmi:id="_Zk14sOBmEemS-cu8nkBOig" name="Publication2EvoPublication" project_path="/TraceabilityModel/case-study/evaluation/Book2Publication/trace" srcMM="/TraceabilityModel/case-study/evaluation/Book2Publication/Publication.ecore" trgMM="/TraceabilityModel/case-study/evaluation/Book2Publication/evo/evo/Publication.ecore" isEvo="true">
+  <links xsi:type="traceabilityModel:ClassTraceabilityLink" xmi:id="_jTZosOBmEemS-cu8nkBOig" name="Change class">
+    <sourceElem xmi:id="_klEr8OBmEemS-cu8nkBOig">
+      <linkedElement href="../Publication.ecore#//Publication"/>
+    </sourceElem>
+    <targetElem xmi:id="_l-PeUOBmEemS-cu8nkBOig">
+      <linkedElement href="../evo/evo/Publication.ecore#//Publication"/>
+      <links xmi:id="_nPCX0OBmEemS-cu8nkBOig" name="Renaming attribute">
+        <targetElem href="../evo/evo/Publication.ecore#//Publication/url"/>
+        <sourceElem xmi:id="_oJ8g4OBmEemS-cu8nkBOig">
+          <linkedElement href="../Publication.ecore#//Publication/uid"/>
+        </sourceElem>
+      </links>
+    </targetElem>
+  </links>
+</traceabilityModel:TraceabilityModel>

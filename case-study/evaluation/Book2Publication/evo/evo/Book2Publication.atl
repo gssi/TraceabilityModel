@@ -1,0 +1,31 @@
+-- @nsURI Book=http://cs.gssi.it/book/1
+-- @nsURI Publication=http://cs.gssi.it/publication
+
+module Book2Publication;
+create OUT : Publication from IN : Book;
+
+rule Library2Publications{
+	from s:Book!Library
+	to t: Publication!Publications(
+	pubs<-s.books	
+	)
+	
+}
+
+rule Book2Publication{
+	from s:Book!Book
+	to t:Publication!Publication(
+	title<-s.title,
+	nbpages<-s.nbpages,
+	sections<-s.sections,
+	url<-'books.com/'+s.isbn,
+	authors<-s.authors->collect(s|s.name)
+	)
+}
+
+rule Section2Section{
+	from s:Book!Chapter
+	to t:Publication!Section(
+	title<-s.title	
+	)
+}

@@ -16,3 +16,20 @@ Elaborating Trace Link Section2Section
 Elaborating Trace Link Paragraph2Section
 -->Found Collapse Hierarchy applied to Paragraph
    Elaborating Feature Trace Link with target: title
+   
+===================================
+Running Migrator
+Elaborating Trace Link Library2Publications
+   Elaborating Feature Trace Link with target: pubs
+Elaborating Trace Link Book2Publication
+-->Found Change class applied to Publication
+   Elaborating Feature Trace Link with target: title
+   Elaborating Feature Trace Link with target: nbpages
+   Elaborating Feature Trace Link with target: sections
+   Elaborating Feature Trace Link with target: uid
+-->Found Renaming attribute applied on uid(Target)
+   Elaborating Feature Trace Link with target: authors
+Elaborating Trace Link Section2Section
+   Elaborating Feature Trace Link with target: title
+Elaborating Trace Link Paragraph2Section
+   Elaborating Feature Trace Link with target: title

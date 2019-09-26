@@ -1,0 +1,17 @@
+@namespace(uri="http://cs.gssi.it/publication/1", prefix="pub")
+package Publication;
+class Publications{
+	val Publication[*] pubs;
+}
+
+class Publication{
+	attr int nbpages;
+	attr String title;
+	attr String url;
+	attr String authors;
+	val Section[*] sections;
+}
+
+class Section{
+	attr String title;
+}
