@@ -1,0 +1,37 @@
+-- @path Company=/SOSYM2019/model/Company.ecore
+-- @path CRM=/SOSYM2019/model/CRM.ecore
+
+module evoCRM2Company;
+create OUT : Company from IN : CRM;
+
+rule CRM2Company{
+	from s: CRM!CRM
+	to t: Company!Organisation(
+		
+	)
+}
+rule Worker2Person{
+	from s: CRM!Worker, s1: CRM!Account
+	to t: Company!Employee(
+	fullName<-s.name
+	)
+}
+rule Client2Person{
+	from s: CRM!Client, s1: CRM!Account
+	to t: Company!Client (
+	fullName<-s.name
+	)
+	
+}
+rule Project2European{
+	
+	from s: CRM!Project
+	to t: Company!Project(
+		name<-s.name,
+		related<-c
+	),
+	c: Company!Topic(
+		id<-s.area	
+	)
+	
+}
