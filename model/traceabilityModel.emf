@@ -42,8 +42,8 @@ class TargetElement extends InOutElement{
 }
 
 class ClassTraceabilityLink extends TraceabilityLink {
-  val SourceElement[+] sourceElem;
-  val TargetElement[+] targetElem;
+  val SourceElement[+]#tracelink sourceElem;
+  val TargetElement[+]#tracelink targetElem;
   
 }
 

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:traceabilityModel="http://cs.gssi.it/traceabilitymodel/2019">
+  <traceabilityModel:TraceabilityModel name="CRM2Company">
+    <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="CRM2Company">
+      <sourceElem>
+        <linkedElement href="../../../mm/CRM.ecore#//CRM"/>
+      </sourceElem>
+      <targetElem>
+        <linkedElement href="../../../mm/evo/Company.ecore#//Organisation"/>
+        <links>
+          <targetElem href="../../../mm/evo/Company.ecore#//Organisation/persons"/>
+          <sourceElem>
+            <linkedElement href="../../../mm/CRM.ecore#//CRM/accounts"/>
+          </sourceElem>
+        </links>
+      </targetElem>
+    </links>
+    <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Worker2Person">
+      <sourceElem>
+        <linkedElement href="../../../mm/CRM.ecore#//Worker"/>
+      </sourceElem>
+      <sourceElem>
+        <linkedElement href="../../../mm/CRM.ecore#//Account"/>
+      </sourceElem>
+      <targetElem>
+        <linkedElement href="../../../mm/evo/Company.ecore#//Person"/>
+        <links>
+          <targetElem href="../../../mm/evo/Company.ecore#//Employee"/>
+          <sourceElem>
+            <linkedElement href="../../../mm/Company.ecore#//type/employee"/>
+          </sourceElem>
+        </links>
+        <links>
+          <targetElem href="../../../mm/evo/Company.ecore#//Person/fullName"/>
+          <sourceElem>
+            <linkedElement href="../../../mm/CRM.ecore#//Worker/name"/>
+          </sourceElem>
+        </links>
+        <links>
+          <targetElem href="../../../mm/evo/Company.ecore#//Person/fullName"/>
+          <sourceElem>
+            <linkedElement href="../../../mm/CRM.ecore#//Worker/name"/>
+          </sourceElem>
+        </links>
+      </targetElem>
+    </links>
+    <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Client2Person">
+      <sourceElem>
+        <linkedElement href="../../../mm/evo/Company.ecore#//Client"/>
+      </sourceElem>
+      <sourceElem>
+        <linkedElement href="../../../mm/CRM.ecore#//Account"/>
+      </sourceElem>
+      <targetElem>
+        <linkedElement href="../../../mm/evo/Company.ecore#//Person"/>
+        <links>
+          <targetElem href="../../../mm/evo/Company.ecore#//Employee"/>
+          <sourceElem>
+            <linkedElement href="../../../mm/Company.ecore#//type/client"/>
+          </sourceElem>
+        </links>
+        <links>
+          <targetElem href="../../../mm/evo/Company.ecore#//Person/fullName"/>
+          <sourceElem>
+            <linkedElement href="../../../mm/CRM.ecore#//Account/username"/>
+          </sourceElem>
+        </links>
+        <links>
+          <targetElem href="../../../mm/evo/Company.ecore#//Person/fullName"/>
+          <sourceElem>
+            <linkedElement href="../../../mm/CRM.ecore#//Client/name"/>
+          </sourceElem>
+        </links>
+      </targetElem>
+    </links>
+    <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Project2European">
+      <sourceElem>
+        <linkedElement href="../../../mm/evo/Company.ecore#//Project"/>
+      </sourceElem>
+      <targetElem>
+        <linkedElement href="../../../mm/evo/Company.ecore#//Project"/>
+        <links>
+          <targetElem href="../../../mm/evo/Company.ecore#//Project/name"/>
+          <sourceElem>
+            <linkedElement href="../../../mm/CRM.ecore#//Project/name"/>
+          </sourceElem>
+        </links>
+        <links>
+          <targetElem href="../../../mm/evo/Company.ecore#//Project/related"/>
+          <sourceElem>
+            <linkedElement href="../CRM2Company.model#_4Kx9wOIHEemS-cu8nkBOig"/>
+          </sourceElem>
+        </links>
+      </targetElem>
+    </links>
+    <links xsi:type="traceabilityModel:ClassTraceabilityLink" name="Group2Unit">
+      <sourceElem>
+        <linkedElement href="../../../mm/CRM.ecore#//Group"/>
+      </sourceElem>
+      <targetElem>
+        <linkedElement href="../../../mm/evo/Company.ecore#//Unit"/>
+      </targetElem>
+    </links>
+  </traceabilityModel:TraceabilityModel>
+  <traceabilityModel:FeatureTraceabilityLink>
+    <targetElem href="../../../mm/evo/Company.ecore#//Project/name"/>
+    <sourceElem>
+      <linkedElement href="../../../mm/CRM.ecore#//Project/area"/>
+    </sourceElem>
+  </traceabilityModel:FeatureTraceabilityLink>
+</xmi:XMI>

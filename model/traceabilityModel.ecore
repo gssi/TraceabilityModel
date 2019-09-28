@@ -47,9 +47,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ClassTraceabilityLink" eSuperTypes="#//TraceabilityLink">
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceElem" lowerBound="1"
-        upperBound="-1" eType="#//SourceElement" containment="true"/>
+        upperBound="-1" eType="#//SourceElement" containment="true" eOpposite="#//SourceElement/tracelink"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetElem" lowerBound="1"
-        upperBound="-1" eType="#//TargetElement" containment="true"/>
+        upperBound="-1" eType="#//TargetElement" containment="true" eOpposite="#//TargetElement/tracelink"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FeatureTraceabilityLink" eSuperTypes="#//TraceabilityLink">
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetElem" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
@@ -65,7 +65,7 @@
         eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" upperBound="-1"
         eType="#//Constraint" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="nestedElement" upperBound="-1"
-        eType="#//FeatureSourceElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nestedElement" lowerBound="1"
+        upperBound="-1" eType="#//FeatureSourceElement" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
