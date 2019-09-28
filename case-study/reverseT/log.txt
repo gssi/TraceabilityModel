@@ -1,0 +1,27 @@
+Running Migrator
+Elaborating Trace Link CRM2Company
+-->Found Renaming applied to Company
+   Elaborating Feature Trace Link with target: persons
+Elaborating Trace Link Worker2Person
+-->Found ClassToAbstract applied to Person
+   Elaborating Feature Trace Link with target: position
+-->Found IntroduceSubclass applied on position(Target)
+   Elaborating Feature Trace Link with target: firstname
+-->Found mergeAttributes applied on firstname(Target)
+   Elaborating Feature Trace Link with target: lastname
+-->Found mergeAttributes applied on lastname(Target)
+Elaborating Trace Link Client2Person
+-->Found ClassToAbstract applied to Person
+   Elaborating Feature Trace Link with target: position
+-->Found IntroduceSubclass applied on position(Target)
+   Elaborating Feature Trace Link with target: firstname
+-->Found mergeAttributes applied on firstname(Target)
+   Elaborating Feature Trace Link with target: lastname
+-->Found mergeAttributes applied on lastname(Target)
+Elaborating Trace Link Project2European
+-->Found CollapseHierarchy applied to European
+   Elaborating Feature Trace Link with target: name
+   Elaborating Feature Trace Link with target: related
+-->Found changeRefType applied on related(Target)
+Elaborating Trace Link Group2Unit
+   Elaborating Feature Trace Link with target: name
